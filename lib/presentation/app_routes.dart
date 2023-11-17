@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'screens/restaurant_dashboard_screen.dart';
 
 class AppRoutes {
