@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_dashboard/presentation/widgets/custom_app_bar.dart';
 
 import '../widgets/body.dart';
 
@@ -8,6 +9,7 @@ class RestaurantDashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      appBar: CustomAppBar(),
       body: Body(
         bodyWidgets: [
           Text('Restaurant Dashboard'),
