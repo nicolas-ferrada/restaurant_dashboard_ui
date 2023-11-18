@@ -9,11 +9,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  static const String _appFont = 'Sen';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
+        fontFamily: _appFont,
       ),
       debugShowCheckedModeBanner: false,
       routes: AppRoutes.routes,
