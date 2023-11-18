@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_dashboard/presentation/styles/app_color.dart';
 import 'package:restaurant_dashboard/presentation/styles/app_font_size.dart';
-import 'package:restaurant_dashboard/presentation/styles/app_font_style.dart';
 
 class GraphContainer extends StatelessWidget {
   final Widget graph;
@@ -70,7 +69,7 @@ class GraphContainer extends StatelessWidget {
     return const TextStyle(
       fontSize: AppFontSize.text,
       color: AppColor.yellow,
-      decoration: AppFontStyle.underlinedStyle,
+      decoration: TextDecoration.underline,
       decorationColor: AppColor.yellow,
     );
   }
@@ -86,7 +85,7 @@ class GraphContainer extends StatelessWidget {
             'See Details',
             style: TextStyle(
               color: AppColor.grey,
-              decoration: AppFontStyle.underlinedStyle,
+              decoration: TextDecoration.underline,
               fontSize: AppFontSize.text,
             ),
           ),
@@ -100,7 +99,7 @@ class GraphContainer extends StatelessWidget {
       '\$2,241',
       style: TextStyle(
         fontSize: AppFontSize.subtitle,
-        fontWeight: AppFontStyle.weightStyle,
+        fontWeight: FontWeight.bold,
       ),
     );
   }
