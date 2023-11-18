@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurant_dashboard/models/graph.dart';
-import 'package:restaurant_dashboard/presentation/styles/app_font_size.dart';
+import '../../models/graph.dart';
+import '../styles/app_font_size.dart';
 
 class Graph extends StatelessWidget {
   const Graph({super.key});
