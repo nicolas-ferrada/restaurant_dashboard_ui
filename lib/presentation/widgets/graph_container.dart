@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_dashboard/presentation/styles/app_color.dart';
-import 'package:restaurant_dashboard/presentation/styles/app_font_size.dart';
 
 class GraphContainer extends StatelessWidget {
   final Widget graph;
@@ -56,7 +55,7 @@ class GraphContainer extends StatelessWidget {
             onTap: () {},
             child: const Text(
               'Orders',
-              style: TextStyle(fontSize: AppFontSize.text),
+              style: TextStyle(fontSize: 15),
             ),
           ),
           seeDetailsButton(),
@@ -67,7 +66,7 @@ class GraphContainer extends StatelessWidget {
 
   TextStyle selectedTabStyle() {
     return const TextStyle(
-      fontSize: AppFontSize.text,
+      fontSize: 15,
       color: AppColor.yellow,
       decoration: TextDecoration.underline,
       decorationColor: AppColor.yellow,
@@ -86,7 +85,7 @@ class GraphContainer extends StatelessWidget {
             style: TextStyle(
               color: AppColor.grey,
               decoration: TextDecoration.underline,
-              fontSize: AppFontSize.text,
+              fontSize: 15,
             ),
           ),
         ),
@@ -98,7 +97,7 @@ class GraphContainer extends StatelessWidget {
     return const Text(
       '\$2,241',
       style: TextStyle(
-        fontSize: AppFontSize.subtitle,
+        fontSize: 21,
         fontWeight: FontWeight.bold,
       ),
     );
@@ -116,7 +115,7 @@ class GraphContainer extends StatelessWidget {
           Text(
             'Daily',
             style: TextStyle(
-              fontSize: AppFontSize.text,
+              fontSize: 15,
               color: AppColor.grey,
             ),
           ),

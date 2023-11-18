@@ -1,7 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import '../../models/graph_data.dart';
-import '../styles/app_font_size.dart';
 
 class Graph extends StatelessWidget {
   const Graph({super.key});
@@ -132,7 +131,7 @@ class Graph extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-        fontSize: AppFontSize.smallTextGraph,
+        fontSize: 10,
       ),
     );
   }

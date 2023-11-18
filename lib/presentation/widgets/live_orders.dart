@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../styles/app_color.dart';
-import '../styles/app_font_size.dart';
 
 class LiveOrders extends StatelessWidget {
   const LiveOrders({super.key});
@@ -34,7 +33,7 @@ class LiveOrders extends StatelessWidget {
       child: const Text(
         'Order History',
         style: TextStyle(
-          fontSize: AppFontSize.text,
+          fontSize: 15,
           color: AppColor.yellow,
           decoration: TextDecoration.underline,
           decorationColor: AppColor.yellow,
@@ -46,7 +45,7 @@ class LiveOrders extends StatelessWidget {
   Widget liveOrders() {
     return const Text(
       'Live Orders',
-      style: TextStyle(fontSize: AppFontSize.subtitle),
+      style: TextStyle(fontSize: 21),
     );
   }
 
@@ -100,7 +99,7 @@ class LiveOrders extends StatelessWidget {
       textAlign: TextAlign.center,
       style: const TextStyle(
         color: AppColor.grey,
-        fontSize: AppFontSize.bigText,
+        fontSize: 38,
         fontWeight: FontWeight.bold,
       ),
     );

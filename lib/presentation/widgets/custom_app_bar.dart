@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../styles/app_color.dart';
-import '../styles/app_font_size.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -47,7 +46,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           const Text(
             'Snack City',
             style: TextStyle(
-              fontSize: AppFontSize.appbarTitle,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -55,7 +54,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           const Text(
             'Proddatur Branch',
             style: TextStyle(
-              fontSize: AppFontSize.appbarSubtitle,
+              fontSize: 14,
               color: AppColor.white,
             ),
           ),
