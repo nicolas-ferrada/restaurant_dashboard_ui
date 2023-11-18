@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/body.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/graph.dart';
+import '../widgets/graph_container.dart';
 import '../widgets/live_orders.dart';
 
 class RestaurantDashboardScreen extends StatelessWidget {
@@ -12,11 +13,14 @@ class RestaurantDashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(),
-      body: Body(
-        bodyWidgets: [
-          LiveOrders(),
-          Graph(),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(8),
+        child: Body(
+          bodyWidgets: [
+            LiveOrders(),
+            Graph(),
+          ],
+        ),
       ),
     );
   }

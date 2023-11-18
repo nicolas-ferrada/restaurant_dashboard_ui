@@ -9,14 +9,11 @@ class LiveOrders extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8),
-      child: Column(
-        children: [
-          header(),
-          stats(),
-        ],
-      ),
+    return Column(
+      children: [
+        header(),
+        stats(),
+      ],
     );
   }
 
@@ -67,26 +64,20 @@ class LiveOrders extends StatelessWidget {
     required int amount,
     required String subtitle,
   }) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      child: SizedBox(
-        height: 120,
-        width: 140,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: AppColor.white,
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(8),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                statsBuilderAmount(amount),
-                statsBuilderSubtitle(subtitle),
-              ],
-            ),
-          ),
+    return SizedBox(
+      height: 120,
+      width: 140,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: AppColor.white,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            statsBuilderAmount(amount),
+            statsBuilderSubtitle(subtitle),
+          ],
         ),
       ),
     );
