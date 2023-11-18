@@ -1,6 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import '../../models/graph.dart';
+import '../../models/graph_data.dart';
 import '../styles/app_font_size.dart';
 
 class Graph extends StatelessWidget {
