@@ -12,6 +12,7 @@ class LiveOrders extends StatelessWidget {
     return Column(
       children: [
         header(),
+        const SizedBox(height: 8),
         stats(),
       ],
     );
@@ -65,7 +66,7 @@ class LiveOrders extends StatelessWidget {
     required String subtitle,
   }) {
     return SizedBox(
-      height: 120,
+      height: 105,
       width: 140,
       child: Container(
         decoration: BoxDecoration(
