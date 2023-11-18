@@ -14,11 +14,14 @@ class RestaurantDashboardScreen extends StatelessWidget {
     return const Scaffold(
       appBar: CustomAppBar(),
       body: Padding(
-        padding: EdgeInsets.all(8),
+        padding: EdgeInsets.all(12),
         child: Body(
           bodyWidgets: [
             LiveOrders(),
-            Graph(),
+            SizedBox(height: 16),
+            GraphContainer(
+              graph: Graph(),
+            ),
           ],
         ),
       ),
