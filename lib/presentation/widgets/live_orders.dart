@@ -47,7 +47,7 @@ class LiveOrders extends StatelessWidget {
 
   Widget liveOrders() {
     return const Text(
-      'Live orders',
+      'Live Orders',
       style: TextStyle(fontSize: AppFontSize.subtitle),
     );
   }
@@ -69,7 +69,7 @@ class LiveOrders extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: SizedBox(
-        height: 100,
+        height: 120,
         width: 140,
         child: Container(
           decoration: BoxDecoration(
@@ -81,20 +81,35 @@ class LiveOrders extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  amount.toString(),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: AppColor.grey, fontSize: 38),
-                ),
-                Text(
-                  subtitle,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: AppColor.grey),
-                ),
+                statsBuilderAmount(amount),
+                statsBuilderSubtitle(subtitle),
               ],
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget statsBuilderSubtitle(String subtitle) {
+    return Text(
+      subtitle,
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+        color: AppColor.grey,
+        fontWeight: AppFontStyle.weightStyle,
+      ),
+    );
+  }
+
+  Widget statsBuilderAmount(int amount) {
+    return Text(
+      amount.toString(),
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+        color: AppColor.grey,
+        fontSize: AppFontSize.bigText,
+        fontWeight: AppFontStyle.weightStyle,
       ),
     );
   }

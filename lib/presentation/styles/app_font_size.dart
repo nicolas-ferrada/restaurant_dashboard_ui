@@ -4,4 +4,6 @@ class AppFontSize {
 
   static const double subtitle = 21;
   static const double text = 15;
+
+  static const double bigText = 38;
 }
