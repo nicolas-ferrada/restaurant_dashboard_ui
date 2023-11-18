@@ -6,4 +6,6 @@ class AppFontSize {
   static const double text = 15;
 
   static const double bigText = 38;
+
+  static const double smallTextGraph = 10;
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/custom_app_bar.dart';
+import '../widgets/graph.dart';
 import '../widgets/live_orders.dart';
 
 import '../widgets/body.dart';
@@ -14,6 +15,7 @@ class RestaurantDashboardScreen extends StatelessWidget {
       body: Body(
         bodyWidgets: [
           LiveOrders(),
+          Graph(),
         ],
       ),
     );
