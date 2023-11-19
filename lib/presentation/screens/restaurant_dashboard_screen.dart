@@ -1,13 +1,34 @@
 import 'package:flutter/material.dart';
 
+import '../../models/graph_data.dart';
 import '../widgets/body.dart';
 import '../widgets/custom_app_bar.dart';
-import '../widgets/graph.dart';
+import '../widgets/linear_graph.dart';
 import '../widgets/graph_container.dart';
 import '../widgets/live_orders.dart';
 
 class RestaurantDashboardScreen extends StatelessWidget {
   const RestaurantDashboardScreen({super.key});
+
+  static const List<GraphData> graphDataList = [
+    GraphData(0),
+    GraphData(2),
+    GraphData(1),
+    GraphData(3),
+    GraphData(2),
+    GraphData(4),
+    GraphData(3),
+  ];
+
+  static const List<String> bottonLabelList = [
+    '10AM',
+    '11AM',
+    '12PM',
+    '01PM',
+    '02PM',
+    '03PM',
+    '04PM',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +41,11 @@ class RestaurantDashboardScreen extends StatelessWidget {
             LiveOrders(),
             SizedBox(height: 16),
             GraphContainer(
-              graph: Graph(),
+              graph: LinearGraph(
+                graphDataList: graphDataList,
+                maxGraphDataPoints: 7,
+                bottonLabelList: bottonLabelList,
+              ),
             ),
           ],
         ),
