@@ -5,4 +5,9 @@ class AppColor {
   static const Color orange = Color(0xFFFB6D3A);
   static const Color white = Colors.white;
   static const Color grey = Colors.grey;
+
+  static const List<Color> gradientColorsGraph = [
+    AppColor.yellow,
+    AppColor.white,
+  ];
 }

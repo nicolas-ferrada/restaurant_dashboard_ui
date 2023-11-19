@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:restaurant_dashboard/presentation/styles/app_color.dart';
 import '../../models/graph_data.dart';
 
 class LinearGraph extends StatelessWidget {
@@ -33,7 +34,7 @@ class LinearGraph extends StatelessWidget {
         maxX: (maxGraphDataPoints - 1),
         minY: 0,
         maxY: 6,
-        borderData: FlBorderData(show: true),
+        borderData: FlBorderData(show: false),
         gridData: const FlGridData(show: false),
       ),
     );
@@ -45,7 +46,17 @@ class LinearGraph extends StatelessWidget {
         spots: getGraphData(),
         isCurved: true,
         barWidth: 4,
-        belowBarData: BarAreaData(show: true),
+        color: AppColor.yellow,
+        belowBarData: BarAreaData(
+          show: true,
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: AppColor.gradientColorsGraph
+                .map((color) => color.withOpacity(0.4))
+                .toList(),
+          ),
+        ),
         dotData: const FlDotData(show: false),
       ),
     ];
@@ -76,7 +87,7 @@ class LinearGraph extends StatelessWidget {
       bottomTitles: AxisTitles(
         sideTitles: SideTitles(
           showTitles: true,
-          reservedSize: 30,
+          reservedSize: 100,
           interval: 1,
           getTitlesWidget: bottomLabelsWidgets,
         ),

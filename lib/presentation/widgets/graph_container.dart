@@ -19,6 +19,7 @@ class GraphContainer extends StatelessWidget {
         children: [
           topOptions(),
           revenueAndFormatTab(),
+          const SizedBox(height: 8),
           graph,
         ],
       ),
