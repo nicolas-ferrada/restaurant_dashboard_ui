@@ -78,15 +78,17 @@ class GraphContainer extends StatelessWidget {
     return Flexible(
       child: Align(
         alignment: Alignment.centerRight,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(25),
-          onTap: () {},
-          child: const Text(
-            'See Details',
-            style: TextStyle(
-              color: AppColor.grey,
-              decoration: TextDecoration.underline,
-              fontSize: 15,
+        child: Material(
+          child: InkWell(
+            borderRadius: BorderRadius.circular(25),
+            onTap: () {},
+            child: const Text(
+              'See Details',
+              style: TextStyle(
+                color: AppColor.grey,
+                decoration: TextDecoration.underline,
+                fontSize: 15,
+              ),
             ),
           ),
         ),

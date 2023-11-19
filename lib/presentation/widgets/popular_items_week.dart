@@ -38,15 +38,17 @@ class PopularItemsWeek extends StatelessWidget {
             textAlign: TextAlign.left,
             style: TextStyle(fontSize: 16),
           ),
-          InkWell(
-            onTap: () {},
-            borderRadius: BorderRadius.circular(25),
-            child: const Text(
-              'See All',
-              style: TextStyle(
-                color: AppColor.orange,
-                decorationColor: AppColor.orange,
-                decoration: TextDecoration.underline,
+          Material(
+            child: InkWell(
+              onTap: () {},
+              borderRadius: BorderRadius.circular(25),
+              child: const Text(
+                'See All',
+                style: TextStyle(
+                  color: AppColor.orange,
+                  decorationColor: AppColor.orange,
+                  decoration: TextDecoration.underline,
+                ),
               ),
             ),
           ),
