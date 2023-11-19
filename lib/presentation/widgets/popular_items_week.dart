@@ -28,22 +28,26 @@ class PopularItemsWeek extends StatelessWidget {
   }
 
   Widget titleAndSeeAllButton() {
-    return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+          const Text(
             'Popular Items This Week',
             textAlign: TextAlign.left,
             style: TextStyle(fontSize: 16),
           ),
-          Text(
-            'See All',
-            style: TextStyle(
-              color: AppColor.orange,
-              decorationColor: AppColor.orange,
-              decoration: TextDecoration.underline,
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(25),
+            child: const Text(
+              'See All',
+              style: TextStyle(
+                color: AppColor.orange,
+                decorationColor: AppColor.orange,
+                decoration: TextDecoration.underline,
+              ),
             ),
           ),
         ],
