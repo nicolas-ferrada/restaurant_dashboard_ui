@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_dashboard/models/item.dart';
 
 import '../../models/graph_data.dart';
 import '../widgets/body.dart';
@@ -6,6 +7,7 @@ import '../widgets/custom_app_bar.dart';
 import '../widgets/linear_graph.dart';
 import '../widgets/graph_container.dart';
 import '../widgets/live_orders.dart';
+import '../widgets/popular_items_week.dart';
 
 class RestaurantDashboardScreen extends StatelessWidget {
   const RestaurantDashboardScreen({super.key});
@@ -30,6 +32,14 @@ class RestaurantDashboardScreen extends StatelessWidget {
     '04PM',
   ];
 
+  static const List<Item> popularItemThisWeek = [
+    Item(),
+    Item(),
+    Item(),
+    Item(),
+    Item(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -46,6 +56,10 @@ class RestaurantDashboardScreen extends StatelessWidget {
                 maxGraphDataPoints: 7,
                 bottonLabelList: bottonLabelList,
               ),
+            ),
+            SizedBox(height: 16),
+            PopularItemsWeek(
+              popularItemsWeek: popularItemThisWeek,
             ),
           ],
         ),
