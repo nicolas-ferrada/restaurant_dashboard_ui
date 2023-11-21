@@ -46,7 +46,7 @@ class LinearGraph extends StatelessWidget {
         spots: getGraphData(),
         isCurved: true,
         barWidth: 4,
-        color: AppColor.yellow,
+        color: AppColor.green,
         belowBarData: BarAreaData(
           show: true,
           gradient: LinearGradient(

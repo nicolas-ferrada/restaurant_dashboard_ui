@@ -68,9 +68,9 @@ class GraphContainer extends StatelessWidget {
   TextStyle selectedTabStyle() {
     return const TextStyle(
       fontSize: 15,
-      color: AppColor.yellow,
+      color: AppColor.green,
       decoration: TextDecoration.underline,
-      decorationColor: AppColor.yellow,
+      decorationColor: AppColor.green,
     );
   }
 

@@ -45,8 +45,8 @@ class PopularItemsWeek extends StatelessWidget {
               child: const Text(
                 'See All',
                 style: TextStyle(
-                  color: AppColor.orange,
-                  decorationColor: AppColor.orange,
+                  color: AppColor.red,
+                  decorationColor: AppColor.red,
                   decoration: TextDecoration.underline,
                 ),
               ),

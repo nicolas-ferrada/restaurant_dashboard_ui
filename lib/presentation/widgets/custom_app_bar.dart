@@ -14,7 +14,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-      backgroundColor: AppColor.yellow,
+      backgroundColor: AppColor.green,
       elevation: 0,
       toolbarHeight: _appbarSize,
       title: title(),
@@ -64,7 +64,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             origin: const Offset(-40, 0),
             child: Switch(
               value: true,
-              activeColor: AppColor.orange,
+              activeColor: AppColor.red,
               activeTrackColor: AppColor.white,
               onChanged: (value) {},
             ),

@@ -34,9 +34,9 @@ class LiveOrders extends StatelessWidget {
         'Order History',
         style: TextStyle(
           fontSize: 15,
-          color: AppColor.yellow,
+          color: AppColor.green,
           decoration: TextDecoration.underline,
-          decorationColor: AppColor.yellow,
+          decorationColor: AppColor.green,
         ),
       ),
     );
