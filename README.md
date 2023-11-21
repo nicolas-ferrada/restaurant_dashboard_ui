@@ -1,16 +1,17 @@
-# restaurant_dashboard
+# Restaurant Dashboard UI
 
-A new Flutter project.
+## Technologies
+![dart](https://img.shields.io/badge/Dart-02569B?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=101010)
+![flutter](https://img.shields.io/badge/Flutter-0175C2?style=for-the-badge&logo=flutter&logoColor=0175C2&labelColor=101010)
 
-## Getting Started
+## Why this project?
 
-This project is a starting point for a Flutter application.
+This project was an assignment to the [Dynish](https://dynish.com/) company.
 
-A few resources to get you started if this is your first Flutter project:
+##
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This application UI was created entirely following a Figma design.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Time
+
+This project took me around 12 hours of work from start to finish.
