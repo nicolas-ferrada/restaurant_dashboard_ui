@@ -47,7 +47,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         children: [
           // Title
           const Text(
-            'Snack City',
+            'Dashboard',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -55,7 +55,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           // Subtitle
           const Text(
-            'Proddatur Branch',
+            'Proddatur',
             style: TextStyle(
               fontSize: 14,
               color: AppColor.white,
@@ -80,12 +80,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   List<Widget> get actions {
     return const [
       // Shopping
-      Icon(Icons.shopping_bag, size: 32, color: AppColor.grey),
-
-      // Circle
       Padding(
-        padding: EdgeInsets.symmetric(horizontal: 8),
-        child: Icon(Icons.circle, size: 48, color: AppColor.grey),
+        padding: EdgeInsets.only(right: 16),
+        child: Icon(Icons.shopping_bag, size: 42, color: AppColor.grey),
       ),
     ];
   }
