@@ -18,19 +18,22 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       toolbarHeight: _appbarSize,
       title: title(),
-      leading: circularImage(),
+      leading: userPictureProfile(),
       actions: actions,
     );
   }
 
-  Widget circularImage() {
+  Widget userPictureProfile() {
     return Transform.scale(
       scale: 0.9,
       origin: const Offset(100, 0),
       child: CircleAvatar(
-        child: Image.asset(
-          'assets/images/ellipse_1557.png',
-          fit: BoxFit.cover,
+        child: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Image.asset(
+            'assets/images/default_user_profile.png',
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );
