@@ -17,7 +17,7 @@ class LinearGraph extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1.3,
+      aspectRatio: 1.5,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: graph(),
@@ -87,7 +87,7 @@ class LinearGraph extends StatelessWidget {
       bottomTitles: AxisTitles(
         sideTitles: SideTitles(
           showTitles: true,
-          reservedSize: 100,
+          reservedSize: 50,
           interval: 1,
           getTitlesWidget: bottomLabelsWidgets,
         ),
