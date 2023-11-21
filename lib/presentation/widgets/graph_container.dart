@@ -44,33 +44,18 @@ class GraphContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
         children: [
-          GestureDetector(
-            onTap: () {},
-            child: Text(
-              'Revenue',
-              style: selectedTabStyle(),
-            ),
-          ),
-          const SizedBox(width: 16),
-          GestureDetector(
-            onTap: () {},
-            child: const Text(
-              'Orders',
-              style: TextStyle(fontSize: 15),
+          const Text(
+            'Revenue',
+            style: TextStyle(
+              fontSize: 18,
+              color: AppColor.grey,
+              fontWeight: FontWeight.w600,
+              fontStyle: FontStyle.italic,
             ),
           ),
           seeDetailsButton(),
         ],
       ),
-    );
-  }
-
-  TextStyle selectedTabStyle() {
-    return const TextStyle(
-      fontSize: 15,
-      color: AppColor.green,
-      decoration: TextDecoration.underline,
-      decorationColor: AppColor.green,
     );
   }
 
