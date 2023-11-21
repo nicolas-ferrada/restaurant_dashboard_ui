@@ -8,9 +8,10 @@
 
 This project was an assignment to the [Dynish](https://dynish.com/) company.
 
-##
+## Technical skills applied
 
-This application UI was created entirely following a Figma design.
+- UI created entirely following a Figma design.
+- Custom and reusable graph using [fl_chart](https://pub.dev/packages/fl_chart) package.
 
 ## Time
 
